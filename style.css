@@ -1,0 +1,330 @@
+/* CONFIGURAÇÃO BASE INSPIRADA NO CONVITE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%);
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* HEADER COM ESTILO DO CONVITE */
+.header {
+    background-color: #f7fafc;
+    background-image: radial-gradient(rgba(173, 216, 230, 0.2) 1px, transparent 0);
+    background-size: 24px 24px;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+    border-bottom: 3px double #bde0fe;
+    position: relative;
+}
+
+/* Simulação das flores superiores do convite usando CSS suave */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 15px;
+    background: linear-gradient(90deg, #a2d2ff, #bde0fe, #ffafcc, #bde0fe, #a2d2ff);
+    opacity: 0.6;
+}
+
+.monograma {
+    margin-bottom: -10px;
+    border: 1px dashed #bde0fe;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Garante que nada da imagem passe para fora do círculo */
+    background-color: #ffffff; /* Fundo branco caso a imagem precise de contraste */
+}
+
+/* ADICIONE ESTA NOVA REGRA LOGO ABAIXO: */
+.logo-casamento {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o desenho se ajustar sem amassar ou esticar */
+    transform: scale(1.1); /* Opcional: dá um leve zoom se você quiser o brasão mais próximo */
+}
+
+.header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5rem;
+    color: #2b6cb0;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.versiculo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    line-height: 1.8;
+}
+
+.versiculo span {
+    font-style: normal;
+    font-weight: 600;
+    color: #3182ce;
+    display: block;
+    margin-top: 5px;
+}
+
+.data-local {
+    font-size: 1.1rem;
+    color: #2b6cb0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.data-local small {
+    font-weight: 300;
+    color: #718096;
+}
+
+/* CAIXA EXPLICATIVA */
+.info-cesta {
+    background: #ffffff;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 16px;
+    border-left: 5px solid #4a90e2;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.info-cesta i {
+    font-size: 2.2rem;
+    color: #4a90e2;
+}
+
+.info-cesta strong {
+    color: #2b6cb0;
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.info-cesta p {
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+/* CONTAINER DAS SEÇÕES */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.category-section {
+    margin-bottom: 60px;
+}
+
+.category-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2b6cb0;
+    border-bottom: 1px solid #bde0fe;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* CARDS REESTILIZADOS */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: #bde0fe;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #2d3748;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.ajuda-texto {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.price small {
+    font-size: 0.85rem;
+    color: #718096;
+}
+
+/* BOTÕES RECONFIGURADOS */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-pix {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.btn-pix:hover {
+    background-color: #2b6cb0;
+}
+
+.btn-loja {
+    background-color: #ffffff;
+    color: #4a5568;
+    border: 1px solid #cbd5e0;
+}
+
+.btn-loja:hover {
+    background-color: #f7fafc;
+    border-color: #a0aec0;
+}
+
+/* MODAL & QR CODE */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal.hidden { display: none; }
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 480px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #a0aec0;
+}
+
+#qrcode-container {
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    display: inline-block;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* COPIA E COLA */
+.input-copia {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    background: #f7fafc;
+    color: #4a5568;
+}
+
+/* CARD RESERVADO / ESGOTADO */
+.card.esgotado {
+    opacity: 0.65;
+}
+.card.esgotado::after {
+    content: "RESERVADO 🎉";
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    background: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

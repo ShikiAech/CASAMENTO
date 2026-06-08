@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raissa & Lucas - Lista de Presentes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones e Fontes Românticas/Delicadas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Biblioteca para gerar QR Code do seu Pix direto no Front-end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+    <div class="header-decor-top"></div>
+    
+    <div class="monograma">
+        <img src="/logo.png" alt="Logo R&L" class="logo-casamento">
+    </div>
+    
+    <h1>Raissa & Lucas</h1>
+
+        <p class="versiculo">“Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, ninguém separe” <br><span>Matheus 19:6</span></p>
+        
+        <p class="data-local">Domingo, 20 de Setembro às 9h30<br><small>Sítio Steil - Rua Sebastião Oliveira, Araquari</small></p>
+
+        <div class="info-cesta">
+            <i class="fa-solid fa-gift"></i>
+            <div>
+                <strong>Lista de Presentes & Sorteio Especial</strong>
+                <p>Escolha como nos abençoar! Você pode contribuir com o valor em formato de cotas práticas por Pix ou, se preferir, comprar o item físico em qualquer outra loja de sua escolha usando seu cartão. Cada participação garante um número para concorrer a uma linda Cesta de Café da Manhã no dia da cerimônia!</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SEÇÃO: ELETRODOMÉSTICOS -->
+        <section class="category-section">
+            <h2><i class="fa-solid fa-plug"></i> Eletrodomésticos</h2>
+            <div class="products-grid">
+                <div class="card" data-id="fogao" data-tipo="cota" data-valor="50">
+                    <h3>Fogão</h3>
+                    <p class="ajuda-texto">Patrocine uma cota ou compre em outra loja de sua preferência.</p>
+                    <span class="price">R$ 50,00 <small>/ cota</small></span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar Cota via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="forno" data-tipo="cota" data-valor="50">
+                    <h3>Forno Elétrico</h3>
+                    <p class="ajuda-texto">Ajudinha para assar nossas receitas!</p>
+                    <span class="price">R$ 50,00 <small>/ cota</small></span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar Cota via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="secadora" data-tipo="cota" data-valor="100">
+                    <h3>Secadora de Roupas</h3>
+                    <p class="ajuda-texto">Cota para salvar nossos dias de chuva.</p>
+                    <span class="price">R$ 100,00 <small>/ cota</small></span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar Cota via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="microondas" data-tipo="cota" data-valor="50">
+                    <h3>Microondas</h3>
+                    <p class="ajuda-texto">Praticidade no nosso novo dia a dia.</p>
+                    <span class="price">R$ 50,00 <small>/ cota</small></span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar Cota via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="ar" data-tipo="cota" data-valor="100">
+                    <h3>Ar Condicionado</h3>
+                    <p class="ajuda-texto">Cota para garantir o frescor do lar.</p>
+                    <span class="price">R$ 100,00 <small>/ cota</small></span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar Cota via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="cafeteira" data-tipo="inteiro" data-valor="250">
+                    <h3>Cafeteira de Cápsula</h3>
+                    <p class="ajuda-texto">Para as manhãs cheias de energia.</p>
+                    <span class="price">R$ 250,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="aspirador" data-tipo="inteiro" data-valor="180">
+                    <h3>Aspirador de Pó</h3>
+                    <p class="ajuda-texto">Nosso aliado fiel na faxina.</p>
+                    <span class="price">R$ 180,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="ps5" data-tipo="cota" data-valor="150">
+                    <h3>Playstation 5</h3>
+                    <p class="ajuda-texto">O momento gamer merecido dos noivos!</p>
+                    <span class="price">R$ 150,00 <small>/ cota</small></span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar Cota via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: UTILIDADES -->
+        <section class="category-section">
+            <h2><i class="fa-solid fa-kitchen-set"></i> Utilidades de Casa</h2>
+            <div class="products-grid">
+                <div class="card" data-id="kit-facas" data-tipo="inteiro" data-valor="120">
+                    <h3>Kit de Facas</h3>
+                    <span class="price">R$ 120,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="jogo-cha" data-tipo="inteiro" data-valor="90">
+                    <h3>Jogo de Chá</h3>
+                    <span class="price">R$ 90,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="jogo-cozinha" data-tipo="inteiro" data-valor="300">
+                    <h3>Jogo de Cozinha</h3>
+                    <span class="price">R$ 300,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="jogo-toalhas" data-tipo="inteiro" data-valor="110">
+                    <h3>Jogo de Toalhas</h3>
+                    <span class="price">R$ 110,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="jogo-cama" data-tipo="inteiro" data-valor="200">
+                    <h3>Jogo de Cama</h3>
+                    <span class="price">R$ 200,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Dar via Pix</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: ENTRETENIMENTO -->
+        <section class="category-section">
+            <h2><i class="fa-solid fa-film"></i> Assinaturas & Lazer</h2>
+            <div class="products-grid">
+                <div class="card" data-id="netflix" data-tipo="inteiro" data-valor="660">
+                    <h3>Netflix (1 Ano)</h3>
+                    <p class="ajuda-texto">Garante nossas noites de cinema por um ano completo!</p>
+                    <span class="price">R$ 660,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Patrocinar</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="prime" data-tipo="inteiro" data-valor="200">
+                    <h3>Prime Video (1 Ano)</h3>
+                    <p class="ajuda-texto">12 meses de filmes e fretes salvadores.</p>
+                    <span class="price">R$ 200,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Patrocinar</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="crunchyroll" data-tipo="inteiro" data-valor="250">
+                    <h3>Crunchyroll (1 Ano)</h3>
+                    <p class="ajuda-texto">Um ano inteiro de maratonas de animes para os noivos.</p>
+                    <span class="price">R$ 250,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Patrocinar</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="spotify" data-tipo="inteiro" data-valor="300">
+                    <h3>Spotify (1 Ano)</h3>
+                    <p class="ajuda-texto">Trilha sonora diária da nossa casa sem anúncios.</p>
+                    <span class="price">R$ 300,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Patrocinar</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+
+                <div class="card" data-id="sushi" data-tipo="inteiro" data-valor="150">
+                    <h3>Rodízio de Sushi</h3>
+                    <p class="ajuda-texto">O primeiro jantar especial dos recém-casados.</p>
+                    <span class="price">R$ 150,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Pagar Jantar</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: LUA DE MEL -->
+        <section class="category-section">
+            <h2><i class="fa-solid fa-plane"></i> Operação Lua de Mel</h2>
+            <div class="products-grid">
+                <div class="card" data-id="luademel-bronze" data-tipo="inteiro" data-valor="50">
+                    <h3>Contribuição Bronze</h3>
+                    <p class="ajuda-texto">Para um passeio bem especial na viagem!</p>
+                    <span class="price">R$ 50,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Contribuir</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+                <div class="card" data-id="luademel-prata" data-tipo="inteiro" data-valor="100">
+                    <h3>Contribuição Prata</h3>
+                    <p class="ajuda-texto">Para um jantar inesquecível na praia.</p>
+                    <span class="price">R$ 100,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Contribuir</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+                <div class="card" data-id="luademel-ouro" data-tipo="inteiro" data-valor="200">
+                    <h3>Contribuição Ouro</h3>
+                    <p class="ajuda-texto">Patrocine uma parte da nossa hospedagem!</p>
+                    <span class="price">R$ 200,00</span>
+                    <div class="actions">
+                        <button class="btn-pix"><i class="fa-brands fa-pix"></i> Contribuir</button>
+                        <button class="btn-loja"><i class="fa-solid fa-store"></i> Comprei em outra loja</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL INTERATIVO -->
+    <div id="modal-pagamento" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-dinamico"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
